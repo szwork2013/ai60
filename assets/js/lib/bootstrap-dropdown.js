@@ -46,7 +46,7 @@
       if ($this.is('.disabled, :disabled')) return
 
       $parent = getParent($this)
-
+	  	  
       isActive = $parent.hasClass('open')
 
       clearMenus()

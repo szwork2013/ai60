@@ -316,9 +316,12 @@ span.comma {
     font-size: 24px;
 }
 #topic {
-    background: url("../../images/magnify.png") no-repeat scroll 4px center #fff;
+    /*background: url("../../images/magnify.png") no-repeat scroll 4px center #fff;*/
     line-height: 26px;
-    padding-left: 32px;
+    border:none;
+    box-shadow:none;
+    margin:0;
+    /*padding-left: 32px;*/
 }
 #topic.searching {
     background-image: url("/img/581919105986225/start/throbber.gif");

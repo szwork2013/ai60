@@ -356,28 +356,42 @@
 			</div>
 			
 			<div class="doc-content selection">
+				
 			<div class="input">
-				<input type="text" value="" placeholder="例如：诗歌、京剧、美食、棋牌..." id="topic" autocomplete="off" class="" data-toggle="dropdown">
+				<div class="tagger-container">
+					<div class="input-container">
+						<input type="text" style="width: 343px;" id="topic"   value="" placeholder="例如：诗歌、京剧、美食、棋牌..."  autocomplete="off" class="" data-toggle="dropdown" data-target=".input">
+						
+					</div>
+				</div>
+				
 				<div id="returned_topics" class="shaded">
 					<div class="inner">     
 						<ul class="tags">                    
-							<li class="topic-pick inline-block" role="button" data-id="21183">诗歌</li>          
-							<li class="topic-pick inline-block" role="button" data-id="3304">京剧</li>          
-							<li class="topic-pick inline-block" role="button" data-id="30474">美食</li>          
-							<li class="topic-pick inline-block" role="button" data-id="10454">棋牌</li>          
-							<li class="topic-pick inline-block" role="button" data-id="27564">Francophiles</li>          
-							<li class="topic-pick inline-block" role="button" data-id="183">Spanish Language</li>          
-							<li class="topic-pick inline-block" role="button" data-id="43377">Learn to Speak French</li>          
-							<li class="topic-pick inline-block" role="button" data-id="27353">French Students</li>          
-							<li class="topic-pick inline-block" role="button" data-id="51409">French conversation workshops</li>          
-							<li class="topic-pick inline-block" role="button" data-id="30873">French Food</li>          
-							<li class="topic-pick inline-block" role="button" data-id="2151">French Bulldog</li>               
-							<li class="topic-pick inline-block" role="button" data-id="34786">Expat French, French Speakers</li>          
-							<li class="topic-pick display-none" role="button" data-id="46786">Learning French</li>          
-							<li class="topic-pick display-none" role="button" data-id="45560">Travel &amp; Speak French</li>          
-							<li class="topic-pick display-none" role="button" data-id="53170">French Speaking Community, French Teachers</li>          
-							<li class="topic-pick display-none" role="button" data-id="40885">Local French Language Resources</li>               
-							        
+							<li class="topic-pick inline-block">诗歌</li>          
+							<li class="topic-pick inline-block">京剧</li>          
+							<li class="topic-pick inline-block">美食</li>          
+							<li class="topic-pick inline-block">棋牌</li>          
+							<li class="topic-pick inline-block">唱歌</li>          
+							<li class="topic-pick inline-block">听音乐</li>          
+							<li class="topic-pick inline-block">看电影</li>          
+							<li class="topic-pick inline-block">听讲座</li>          
+							<li class="topic-pick inline-block">书法</li>          
+							<li class="topic-pick inline-block">跳舞</li>          
+							<li class="topic-pick inline-block">钓鱼</li>               
+							<li class="topic-pick inline-block">宠物</li>
+							<li class="topic-pick inline-block">羽毛球</li>          
+							<li class="topic-pick inline-block">乒乓球</li>          
+							<li class="topic-pick inline-block">跑步</li>          
+							<li class="topic-pick inline-block">游泳</li>               
+							<li class="topic-pick inline-block">公益</li>
+							<li class="topic-pick inline-block">旅游</li>          
+							<li class="topic-pick inline-block">摄影</li>               
+							<li class="topic-pick inline-block">美食</li>
+							<li class="topic-pick inline-block">饮茶</li>          
+							<li class="topic-pick inline-block">扑克</li>          
+							<li class="topic-pick inline-block">麻将</li>          
+							<li class="topic-pick inline-block">下棋</li>   
 						</ul>
 					</div>
 				</div>
@@ -489,14 +503,14 @@
 			</div><!-- C_pageBody -->
 		</div>
 		
+		<div id="fb-root">
+			<p>2014 悦龄网 All rights reserved. 海南悦龄网络科技有限公司 版权所有</p>
+			<p>ICP证沪B2-20120099</p>
+		</div>
+		
 		<script src="assets/js/lib/jquery.1.10.1.min.js"></script>
 		<script src="assets/js/lib/bootstrap-dropdown.js"></script>
-		<script type="text/javascript">
-			$(function(){
-				$("#topic").dropdown();
-				
-			});
-		</script>
+		<script src="assets/js/tag.js"></script>
 
 	</body>
 </html>
