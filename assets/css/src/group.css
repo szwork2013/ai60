@@ -6138,7 +6138,7 @@ body.hasJS #rsvpBox .rsvp-box-action .len2 {
     padding-left: 2px;
     padding-right: 2px;
 }
-#meetingLocation .D_dialog_chunk {
+.meetingLocation .D_dialog_chunk {
     padding-bottom: 0;
 }
 #meetingLocationMap {

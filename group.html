@@ -8,6 +8,7 @@
 		<title>多彩生活，悦而忘龄-悦龄网</title>
 		<!--reset.css-->
 		<link rel="stylesheet" href="assets/css/reset.css" type="text/css" />
+		
 		<!--1024以上屏幕-->
 		<link rel="stylesheet" href="assets/css/modern.css" type="text/css" />
 		<!--ie兼容-->
@@ -334,7 +335,7 @@
 
 
 
-<a class="ghsprite plus_bk"  href="#" id="lma-suggest">发起一个新的活动</a>
+<a class="ghsprite plus_bk"  href="#createActivity" id="lma-suggest" data-toggle="modal">发起一个新的活动</a>
 
 <div class="closed" id="lma">
 
@@ -1548,15 +1549,80 @@ What's your suggestion for a Meetup?
 			<p>2014 悦龄网 All rights reserved. 海南悦龄网络科技有限公司 版权所有</p>
 			<p>ICP证沪B2-20120099</p>
 		</div>
-
+		<!------------------创建活动弹出框---------------------------->
+		<div class="hasJS">
+			<div id="createActivity" class="D_dialog meetingLocation" style="position:absolute;top:8%;left: 50%;margin-left: -375px;position: absolute;width: 690px">
+			<div class="D_dialog_chunk">
+				<h2 style="margin-bottom:6px;">创建活动</h2>
+				<form action="" id="meetingLocationCoordsForm">
+					<div>活动名称: <input type="text" class="" value="" style="width: 100%"></div> 
+					<div>活动介绍: <textarea rows="5"  ></textarea></div> 
+					<div>活动时间: 
+						<div class="D_form_compact">
+							<div class="element coPicker">
+								<select class="" id="year" name="year">
+									<option value="us">1976年</option>
+									<option value="ca">1975年</option>
+								</select>
+							</div>
+							<div class="element coPicker">
+								<select class="" id="month" name="month">
+									<option value="meetup253">1月</option>
+									<option value="meetup296">2月</option>
+								</select>
+							</div>
+							<div class="element coPicker">
+								<select class="" id="day" name="day">					
+									<option value="us">1日</option>
+									<option value="ca">2日</option>
+								</select>
+							</div>
+							<div class="element coPicker">
+								<select class="" id="hour" name="day">					
+									<option value="us">14时</option>
+									<option value="ca">15时</option>
+								</select>
+							</div>
+							
+							<div class="element coPicker">
+								<select class="" id="minute" name="day">					
+									<option value="us">14分</option>
+									<option value="ca">15分</option>
+								</select>
+							</div>
+							<div class="inline" style="float: left;margin-right:20px;line-height: 30px">至</div>
+							<div class="element coPicker">
+								<select class="" id="hour" name="day">					
+									<option value="us">14时</option>
+									<option value="ca">15时</option>
+								</select>
+							</div>
+							
+							<div class="element coPicker">
+								<select class="" id="minute" name="day">					
+									<option value="us">14分</option>
+									<option value="ca">15分</option>
+								</select>
+							</div>
+						</div>
+					</div> 
+					<div>活动地点: <input type="text" class="" value="" style="width: 100%"></div> 
+				</form>
+			</div>
+			<div class="D_dialog_foot">
+							<a class="button primary" id="saveMeetingLocation" href="">创建</a> <a class="D_dialog_cancel" href="">取消</a>
+						</div>
+		</div>
+		</div>	
+		
+		
+		
 		
 		<script src="assets/js/lib/jquery.1.10.1.min.js"></script>
-		
 		<script src="assets/js/lib/bootstrap-dropdown.js"></script>
 		<script type="text/javascript">
 			$(function(){
 				$("#nav-profile .dropdown-toggle").dropdown();
-				
 			});
 		</script>
 
