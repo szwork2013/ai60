@@ -1451,10 +1451,10 @@ ul.simple-view-date-display > li:last-child {
 }
 .member-role--text {
     color: #aaa;
-    display: inline-block;
+    /*display: inline-block;
     font-size: 8px;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: uppercase;*/
 }
 .simple-card-li .ffbox-fix {
     border-top: medium none;
