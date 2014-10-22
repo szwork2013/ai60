@@ -380,15 +380,11 @@ input.error, select.error, textarea.error {
     font-weight: 700;
     margin-bottom: 0;
 }
-.fieldError {
-    font-style: italic;
-}
+
 .inlineErrorMsgs {
     padding-left: 0;
 }
-.inlineErrorMsgs li {
-    list-style: none outside none;
-}
+
 .counter {
     color: #888;
 }

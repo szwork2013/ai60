@@ -46,9 +46,10 @@
 
 				<div id="C_globalNav">
 					<div id="C_tabs">
-						<a href="group_index.html"> <span class="C_tabContent"> <span class="C_topBig"> 社团 </span> <!-- <span class="C_topSm"> 兴趣小组 </span> </span> --> </a>
-						<a href="#"> <span class="C_tabContent"> <span class="C_topBig"> 生活指南</span> <!-- <span class="C_topSm"> 兴趣小组 </span> </span> --> </a>
-						<a href="about_us.html"> <span class="C_tabContent"> <span class="C_topBig"> 关于我们</span> <!-- <span class="C_topSm"> 兴趣小组 </span> </span> --> </a>
+						<a href="index.html"> <span class="C_tabContent"> <span class="C_topBig"> 首页 </span></a>
+						<a href="group_index.html"> <span class="C_tabContent"> <span class="C_topBig"> 社团 </span></a>
+						<a href="#"> <span class="C_tabContent"> <span class="C_topBig"> 生活指南</span> </a>
+						<a href="about_us.html"> <span class="C_tabContent"> <span class="C_topBig"> 关于我们</span></a>
 					</div>
 				</div>
 
@@ -69,7 +70,11 @@
 				        <li class="Row">
 				          <label for="username">邮箱或手机号</label>
 				          <div id="email-wrapper">
-				            <input type="text" class="TextInput TextInput_large" name="username" maxlength="255" id="username"><script type="text/javascript">setTimeout(function(){try{var z=document.getElementById('username');z.focus();z.select();}catch(e){}},1);</script></div>
+				            <input type="text" class="TextInput TextInput_large error" name="username" maxlength="255" id="username">
+				            <ul class="inlineErrorMsgs">
+				            	<li class="fieldError">邮箱或手机号不能为空</li>
+				            </ul>
+				          </div>
 				        </li>
 				        <li class="Row">
 				          <label for="password">创建密码</label>
