@@ -10,8 +10,49 @@
     border-bottom: 1px solid transparent;
     padding: 18px 18px 0;
 }
+.lastUnit:after, .line-gutters:after, .line:after {
+    clear: both;
+    content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
+    display: block;
+    font-size: xx-large;
+    height: 0 !important;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.unit {
+    float: left;
+    min-height: 1px;
+}
+.size1of1 {
+    float: none;
+}
+.size1of2 {
+    width: 50%;
+}
+.size1of3 {
+    width: 33.3333%;
+}
 .size2of3 {
     width: 66.6667%;
+}
+.size1of4 {
+    width: 25%;
+}
+.size3of4 {
+    width: 75%;
+}
+.size1of5 {
+    width: 20%;
+}
+.size2of5 {
+    width: 40%;
+}
+.size3of5 {
+    width: 60%;
+}
+.size4of5 {
+    width: 80%;
 }
 .size1of7 {
     width: 14.2857%;
@@ -31,6 +72,26 @@
 .size6of7 {
     width: 85.7143%;
 }
+
+.span-25 {
+    width: 25%;
+}
+.span-30 {
+    width: 30%;
+}
+.span-50 {
+    width: 50%;
+}
+.span-60 {
+    width: 60%;
+}
+.span-75 {
+    width: 75%;
+}
+.span-100 {
+    width: 99.8%;
+}
+
 .margin-left {
     margin-left: 18px;
 }

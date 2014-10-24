@@ -356,10 +356,8 @@ html .capitalize {
     text-decoration: none;
 }
 #C_pagePreBody {
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: no-repeat center center;
     background-size: cover;
-    margin-bottom: 44px;
     position: relative;
 }
 #C_pagePreBody.is-alien {

@@ -51,11 +51,9 @@
     padding-right: 15px;
 }
 .category-card__image {
-    background-color: transparent;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: transparent no-repeat center center;
     background-size: cover;
-    min-height: 240px;
+    min-height: 210px;
     position: relative;
 }
 .category-card__image:hover{
