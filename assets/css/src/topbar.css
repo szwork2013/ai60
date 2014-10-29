@@ -9,8 +9,6 @@
 }
 #C_headerBody {
     position: relative;
-    margin: 0 auto;
-    width: 960px;
 }
 /*logo*/
 #C_logo {
@@ -31,12 +29,7 @@
 #C_userNav #C_userLinks.inlineblockList > li {
     vertical-align: top;
 }
-.C_userNavItem.C_userTopNavItem {
-    margin-right: 20px;
-}
-.inlineblockList > li {
-    display: inline-block;
-}
+
 #C_userNav #C_userLinks #nav-profile {
     float: left;
 }
@@ -219,7 +212,7 @@
 }
 #C_tabs {
     height: 4.4em;
-    margin-left: 165px !important;
+    margin-left: 165px;
 }
 #C_tabs a:hover, #C_tabs a:link, #C_tabs a:visited {
     display: block;
@@ -456,8 +449,8 @@
     font-family: Microsoft YaHei,Arial,Helvetica,sans-serif;
     font-size: 16px;
     font-weight: 700;
-    line-height: 1 !important;
     margin-bottom: 18px;
+    line-height: 1 !important;
     padding: 9px 18px 7px;
     text-align: center;
     text-decoration: none !important;
@@ -605,4 +598,173 @@
 }
 #C_userNav #C_userLinks #nav-notifications .notifItem a {
     text-decoration: none;
+}
+
+
+/**新近的**/
+
+
+#C_userNav #C_userLinks {
+    float: left;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+    position: relative;
+}
+
+#C_userNav #C_userLinks .nav-button--red {
+    background-color: #FC9223;
+    color: #fff;
+}
+#C_userNav #C_userLinks .nav-button--red:hover {
+    background-color: #CD6D19;
+}
+#C_userNav #C_userLinks .nav-button--white {
+    color: #555;
+    padding: 9px 0 7px;
+}
+#C_userNav #C_userLinks .nav-button--white:hover {
+    color: #2a9bc7;
+}
+#C_userNav #C_userLinks .nav-button--gray {
+    background-color: rgba(64, 64, 64, 0.47);
+    color: #fff;
+}
+#C_userNav #C_userLinks .nav-button--gray:hover {
+    background-color: #f15923;
+}
+#C_userNav #C_userLinks .nav-button--gray.small, #C_userNav #C_userLinks .nav-button--white.small {
+    padding: 6px;
+}
+#C_userNav #C_userLinks .dropdown {
+    position: static;
+}
+#C_userNav #C_userLinks .dropdown .dropdown-menu {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.47);
+    right: 0;
+    top: auto;
+}
+#C_userNav #C_userLinks .dropdown .dropdown-menu li {
+    padding: 0;
+}
+#C_userNav #C_userLinks .dropdown .dropdown-menu li a {
+    border-radius: 0;
+}
+
+#C_userNav #C_userLinks #nav-profile .nav-avatar.qled {
+    border-color: #F15923;
+}
+#C_userNav #C_userLinks #nav-profile .nav-avatar .icon-drop-down {
+    color: rgba(0, 0, 0, 0.47);
+    font-size: 10px;
+    position: absolute;
+    right: 7px;
+    top: 17px;
+}
+#C_userNav #C_userLinks #nav-profile .nav-avatar:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#C_userNav #C_userLinks #nav-profile .nav-avatar:hover .icon-drop-down {
+    color: #2a9bc7;
+}
+#C_userNav #C_userLinks #nav-profile .dropdown-menu {
+    margin-top: 12px;
+    padding: 0;
+    width: 512px;
+}
+#C_userNav #C_userLinks #nav-profile .dropdown-menu:after, #C_userNav #C_userLinks #nav-profile .dropdown-menu:before {
+    left: 370px;
+}
+#C_userNav #C_userLinks #nav-profile .dropdown-menu.messagesOffset {
+    right: 14px;
+}
+#C_userNav #C_userLinks #nav-profile .dropdown-menu.messagesOffset:after, #C_userNav #C_userLinks #nav-profile .dropdown-menu.messagesOffset:before {
+    left: 341px;
+}
+
+#C_userNav #C_userLinks #nav-profile .dropdown-menu #C_groupsMenu p {
+    color: #888;
+}
+#C_userNav #C_userLinks #nav-profile .dropdown-menu #C_groupsMenu ul {
+    padding-left: 0;
+}
+#C_userNav #C_userLinks #nav-profile .dropdown-menu #C_groupsMenu li a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #F15923;
+    font-size: 16px;
+    margin: 0 20px;
+    padding: 12px 0;
+}
+#C_userNav #C_userLinks #nav-profile .dropdown-menu #C_groupsMenu li a:hover {
+    border-color: #F15923;
+    margin: 0;
+    padding: 12px 20px;
+}
+#C_userNav #C_userLinks #nav-profile .dropdown-menu #C_groupsMenu li:last-child a {
+    border-bottom: 0 none;
+}
+
+#C_userNav #C_userLinks #nav-profile .dropdown-menu #nav-account-links li {
+    color: rgba(0, 0, 0, 0.67);
+}
+#C_userNav #C_userLinks #nav-profile .dropdown-menu #nav-account-links li:last-child a {
+    border-bottom: 0 none;
+}
+#C_userNav #C_userLinks #nav-profile .dropdown-menu #nav-account-links li a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    margin: 0 20px;
+    padding: 12px 0;
+}
+#C_userNav #C_userLinks #nav-profile .dropdown-menu #nav-account-links li a:hover {
+    border-color: #F15923;
+    margin: 0;
+    padding: 12px 20px;
+}
+
+#C_userNav #C_userLinks #nav-notifications .icon-notifications {
+    color: rgba(0, 0, 0, 0.47);
+    font-size: 22px;
+    line-height: 50px;
+}
+#C_userNav #C_userLinks #nav-notifications .icon-notifications:hover {
+    color: #2a9bc7;
+}
+
+#C_userNav #C_userLinks #nav-about .dropdown-toggle .icon-more {
+    color: rgba(0, 0, 0, 0.47);
+    line-height: 50px;
+}
+#C_userNav #C_userLinks #nav-about .dropdown-toggle .icon-more:hover {
+    color: #2a9bc7;
+}
+
+#C_userNav #C_userLinks #nav-messages {
+    position: relative;
+}
+
+#C_userNav #C_userLinks #nav-messages .unreadConvosCount[data-count="0"] {
+    display: none;
+}
+#C_userNav #C_userLinks #nav-messages .unreadConvosCount.bubbleAnimation {
+    opacity: 1;
+    transform: scale(1);
+}
+#C_userNav #C_userLinks #nav-messages .icon-messaging-messages {
+    color: rgba(0, 0, 0, 0.47);
+    font-size: 22px;
+    line-height: 50px;
+}
+#C_userNav #C_userLinks #nav-messages .icon-messaging-messages:hover {
+    color: #2a9bc7;
+}
+.C_userNavItem {
+    display: inline;
+    font-size: 0.9em;
+    padding: 0;
+}
+.C_userNavItem.C_userTopNavItem:last-child {
+    margin-right: 0;
+}
+.C_userNavItem.C_userTopNavItem.C_userTopNavButtonItem {
+    line-height: 52px;
 }

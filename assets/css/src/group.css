@@ -2898,9 +2898,7 @@ body .redactor_toolbar li a.redactor_btn_spellcheck:before {
     margin: 0 0 0 200px;
     padding-left: 0.7em;
 }
-#C_pageBody {
-    padding-top: 1em;
-}
+
 #C_nav {
     left: 0;
     position: absolute;
@@ -9077,12 +9075,6 @@ input.hexInput {
 }
 #imageLayout li span {
     font-size: 13px;
-}
-body, html {
-    height: 100%;
-}
-#C_join, #C_page {
-    min-height: 100%;
 }
 .say {
     background: none repeat scroll 0 0 #eee;

@@ -1,7 +1,16 @@
+#C_join, #C_page {
+    min-width: 960px;
+    min-height: 100%;
+}
 #C_announceBody, #C_contextHeadBody, #C_headerBody, #C_pageBody {
     margin: 0 auto;
     padding: 0 1em;
     width: 90%;
+}
+#C_pageBody {
+    min-height: 300px;
+    padding-bottom: 1.25em;
+    padding-top: 1.25em;
 }
 .wideContent #C_announceBody, .wideContent #C_contextHeadBody, .wideContent #C_headerBody, .wideContent #C_pageBody, html > body #C_announceBody, html > body #C_contextHeadBody, html > body #C_headerBody, html > body #C_pageBody, html > body .wideContent #C_announceBody, html > body .wideContent #C_contextHeadBody, html > body .wideContent #C_headerBody, html > body .wideContent #C_pageBody {
     width: 960px;
@@ -9,16 +18,6 @@
 .doc-content, .doc-controls, .doc-padding {
     border-bottom: 1px solid transparent;
     padding: 18px 18px 0;
-}
-.lastUnit:after, .line-gutters:after, .line:after {
-    clear: both;
-    content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
-    display: block;
-    font-size: xx-large;
-    height: 0 !important;
-    line-height: 0;
-    overflow: hidden;
-    visibility: hidden;
 }
 .unit {
     float: left;
@@ -126,13 +125,32 @@
 .align-center {
     text-align: center;
 }
-.ffbox-flex {
+.ffbox {
+    box-sizing: border-box;
+    display: table;
+    table-layout: auto;
     width: 100%;
 }
 .ffbox-fix, .ffbox-flex {
     display: table-cell;
     vertical-align: middle;
 }
+.ffbox-flex {
+    width: 100%;
+}
+.ffbox--fixed {
+    table-layout: fixed;
+}
+.ffbox--shaded {
+    background-color: #f7f7f7;
+}
+.pintop, .pintop > .ffbox-fix, .pintop > .ffbox-flex {
+    vertical-align: top;
+}
+.pinbottom, .pinbottom > .ffbox-fix, .pinbottom > .ffbox-flex {
+    vertical-align: bottom;
+}
+
 .line-gutters {
     margin-bottom: 18px;
     margin-right: -18px;

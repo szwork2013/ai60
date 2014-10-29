@@ -200,10 +200,6 @@ html #C_page {
     background: none repeat scroll 0 0 #f4f4f4;
     padding-bottom: 20px;
 }
-html #C_pageBody {
-    font-size: 13px;
-    padding-top: 18px;
-}
 html .capitalize {
     text-transform: capitalize;
 }
